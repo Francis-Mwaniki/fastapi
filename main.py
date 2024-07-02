@@ -43,7 +43,7 @@ def update_item(item_id: int, updated_item: Item):
             return item
     raise HTTPException(status_code=404, detail="Item not found")
 
-# Delete
+
 @app.delete("/items/{item_id}", response_model=Item)
 def delete_item(item_id: int):
     for index, item in enumerate(db):
