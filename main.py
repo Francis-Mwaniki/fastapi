@@ -7,7 +7,7 @@ app = FastAPI()
 # In-memory database
 db = []
 
-# Item model
+# Item 
 class Item(BaseModel):
     id: Optional[int] = None
     name: str
